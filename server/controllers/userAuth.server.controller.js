@@ -1,8 +1,7 @@
 /* Dependencies */
 const mongoose = require('mongoose'),
     User = require('../models/user.server.model.js'),
-    bcrypt = require('bcryptjs'),
-    config = require('../config/config');
+    bcrypt = require('bcryptjs');
 
 exports.login = function(req, res) {
   User.findOne({ username: req.body.username }, function(err, user) {

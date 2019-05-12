@@ -26,17 +26,17 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col">
+								<div class="col" >
 									<p>Username<span style="color:red;">*</span></p>
-									<input type="text" name="Username" ng-model="register.username"><p ng-if="noUsername" class="individual-alert ng-cloak">{{noUsername}}</p>
+									<input type="text" style="color:black;" name="Username" ng-model="register.username"><p ng-if="noUsername" class="individual-alert ng-cloak">{{noUsername}}</p>
 									<p>Password<span style="color:red;">*</span></p>
-									<input type="password" name="Password" ng-model="register.password"><p ng-if="noPassword" class="individual-alert ng-cloak">{{noPassword}}</p><p ng-if="noPasswordMatch" class="individual-alert ng-cloak">{{noPasswordMatch}}</p>
+									<input type="password" style="color:black;" name="Password" ng-model="register.password"><p ng-if="noPassword" class="individual-alert ng-cloak">{{noPassword}}</p><p ng-if="noPasswordMatch" class="individual-alert ng-cloak">{{noPasswordMatch}}</p>
 									<p>Confirm Password<span style="color:red;">*</span></p>
-									<input type="password" name="Confirm-Password" ng-model="register.confpassword"><p ng-if="noConfirmPassword" class="individual-alert ng-cloak">{{noConfirmPassword}}</p><p ng-if="noPasswordMatch" class="individual-alert ng-cloak">{{noPasswordMatch}}</p>
+									<input type="password" style="color:black;" name="Confirm-Password" ng-model="register.confpassword"><p ng-if="noConfirmPassword" class="individual-alert ng-cloak">{{noConfirmPassword}}</p><p ng-if="noPasswordMatch" class="individual-alert ng-cloak">{{noPasswordMatch}}</p>
 									<p>Email<span style="color:red;">*</span></p>
-									<input type="text" name="Email" ng-model="register.email"><p ng-if="noEmail" class="individual-alert ng-cloak">{{noEmail}}</p><p ng-if="noEmailMatch" class="individual-alert ng-cloak">{{noEmailMatch}}</p><p class="individual-alert ng-cloak" ng-if="!noEmail && !noEmailMatch && notValidEmail">{{notValidEmail}}</p>
+									<input type="text" style="color:black;" name="Email" ng-model="register.email"><p ng-if="noEmail" class="individual-alert ng-cloak">{{noEmail}}</p><p ng-if="noEmailMatch" class="individual-alert ng-cloak">{{noEmailMatch}}</p><p class="individual-alert ng-cloak" ng-if="!noEmail && !noEmailMatch && notValidEmail">{{notValidEmail}}</p>
 									<p>Confirm Email<span style="color:red;">*</span></p>
-									<input type="text" name="Confirm-Email" ng-model="register.confemail"><p ng-if="noConfirmEmail" class="individual-alert ng-cloak">{{noConfirmEmail}}</p><p ng-if="noEmailMatch" class="individual-alert ng-cloak">{{noEmailMatch}}</p><p class="individual-alert ng-cloak" ng-if="!noEmail && !noEmailMatch && notValidEmail">{{notValidEmail}}</p>
+									<input type="text" style="color:black;" name="Confirm-Email" ng-model="register.confemail"><p ng-if="noConfirmEmail" class="individual-alert ng-cloak">{{noConfirmEmail}}</p><p ng-if="noEmailMatch" class="individual-alert ng-cloak">{{noEmailMatch}}</p><p class="individual-alert ng-cloak" ng-if="!noEmail && !noEmailMatch && notValidEmail">{{notValidEmail}}</p>
 								</div>
 							</div>
 						</form>
@@ -61,8 +61,8 @@
 									<p>Password:</p>
 								</div>
 								<div class="col-sm">
-									<input type="text" name="Username" ng-model="login.username"><p ng-if="noLogUsername" class="individual-alert ng-cloak">{{noLogUsername}}</p>
-									<input id="u-input" type="password" name="Password" ng-model="login.password"><p ng-if="noLogPassword" class="individual-alert ng-cloak">{{noLogPassword}}</p>
+									<input type="text" style="color:black;" name="Username" ng-model="login.username"><p ng-if="noLogUsername" class="individual-alert ng-cloak">{{noLogUsername}}</p>
+									<input id="u-input" style="color:black;" type="password" name="Password" ng-model="login.password"><p ng-if="noLogPassword" class="individual-alert ng-cloak">{{noLogPassword}}</p>
 									<script>
 										var input = document.getElementById("u-input");
 										input.addEventListener("keyup", function(event) {
@@ -79,16 +79,13 @@
 						<form style="text-align:center;">
 								<input id="login-button" class="signin-button" type="submit" value="LOGIN" ng-click="loginUser()"/>
 						</form>
-						<!-- <div style="text-align:center;">
-							<a style="font-size:13px;" href="forgot-pass.html">Forgot password?</a>
-						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.angularjs.org/1.4.3/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/factories/usersFactory.js"></script>

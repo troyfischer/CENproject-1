@@ -1,8 +1,5 @@
 /* Dependencies */
-var mongoose = require('mongoose'),
-    User = require('../models/user.server.model.js'),
-    bcrypt = require('bcryptjs'),
-    jwt = require('jsonwebtoken'),
+var jwt = require('jsonwebtoken'),
     config = require('../config/config'),
     NodeGeocoder = require('node-geocoder');
 
