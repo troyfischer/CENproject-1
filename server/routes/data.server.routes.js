@@ -3,7 +3,8 @@ var data = require('../controllers/twitter.server.controller.js'),
     express = require('express'),
     router = express.Router();
 
-router.use(data.authValidate);
+// not enforcing auth
+// router.use(data.authValidate);
 
 router.route('/global_topics')
   .get(data.getGlobalTopics);
