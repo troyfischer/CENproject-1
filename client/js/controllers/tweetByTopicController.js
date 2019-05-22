@@ -27,9 +27,10 @@ angular.module('tweet_by_topic').controller('TweetByTopicController', ['$scope',
       topic.result_type = res_type;
       $scope.currentTopic = topic.name;
       Data.getTweetsByTopic(topic).then(function(response) {
-        if (response.data.notAuthorized) {
-          $window.location.href = '/users';
-        }
+        // not enforcing authorization
+        // if (response.data.notAuthorized) {
+        //   $window.location.href = '/users';
+        // }
         if (response.data.success && response.data.tweets.length > 0) {
           $scope.tweetsByTopic = [];
           var tweets = response.data.tweets;

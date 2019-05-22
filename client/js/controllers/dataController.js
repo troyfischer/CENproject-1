@@ -32,10 +32,11 @@ angular.module('data').controller('DataController', ['$scope', '$window', 'Data'
     }
 
     Data.getGlobalTopics().then(function(response) {
-      if (response.data.notAuthorized) {
-        // not authorized
-        $window.location.href = '/users';
-      }
+      // not enforcing authorization
+      // if (response.data.notAuthorized) {
+      //   // not authorized
+      //   $window.location.href = '/users';
+      // }
       $scope.top50topics = response.data.trending_topics;
       // Create the data table.
       var rows = [['Name', 'Volume', { role: 'style' }]];
@@ -70,9 +71,10 @@ angular.module('data').controller('DataController', ['$scope', '$window', 'Data'
     });
 
     Data.getTopTweets().then(function(response) {
-      if (response.data.notAuthorized) {
-          $window.location.href = '/users';
-        }
+      // not enforcing authorization
+      // if (response.data.notAuthorized) {
+      //     $window.location.href = '/users';
+      //   }
         if (response.data.success && response.data.tweets.length > 0) {
           $scope.topTweets = [];
           var tweets = response.data.tweets;
