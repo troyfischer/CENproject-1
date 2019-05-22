@@ -8,9 +8,10 @@ google.charts.setOnLoadCallback(function() {
 angular.module('tweet_by_location').controller('TweetByLocationController', ['$scope', '$window', 'Data',
   function($scope, $window, Data) {
 
-    if (!$window.localStorage.getItem('token')) {
-      $window.location.href = '/users';
-    }
+    // not enforcing login for demonstration purposes
+    // if (!$window.localStorage.getItem('token')) {
+    //   $window.location.href = '/users';
+    // }
 
     if ($window.localStorage.getItem('topic')) {
       $window.localStorage.removeItem('topic');

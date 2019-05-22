@@ -7,9 +7,10 @@ google.charts.setOnLoadCallback(function() {
 
 angular.module('data').controller('DataController', ['$scope', '$window', 'Data',
   function($scope, $window, Data) {
-    if (!$window.localStorage.getItem('token')) {
-      $window.location.href = '/users';
-    }
+    // not enforcing login for demonstration purposes
+    // if (!$window.localStorage.getItem('token')) {
+    //   $window.location.href = '/users';
+    // }
 
     if ($window.localStorage.getItem('location')) {
       $window.localStorage.removeItem('location');

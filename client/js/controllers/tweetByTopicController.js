@@ -2,9 +2,10 @@ angular.module('tweet_by_topic').controller('TweetByTopicController', ['$scope',
   function($scope, $window, Data) {
     $scope.currentTopic = undefined;
     
-    if (!$window.localStorage.getItem('token')) {
-      $window.location.href = '/users';
-    }
+    // not enforcing login for demonstration purposes
+    // if (!$window.localStorage.getItem('token')) {
+    //   $window.location.href = '/users';
+    // }
 
     if ($window.localStorage.getItem('location')) {
       $window.localStorage.removeItem('location');
