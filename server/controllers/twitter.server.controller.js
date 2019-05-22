@@ -111,4 +111,4 @@ exports.getTrendsByLocation = function(req, res) {
 //   //     msg: 'Authorization Failed'
 //   //   });
 //   // }
-}
+// }
