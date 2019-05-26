@@ -37,6 +37,7 @@ angular.module('data').controller('DataController', ['$scope', '$window', 'Data'
       //   // not authorized
       //   $window.location.href = '/users';
       // }
+      console.log(response);
       $scope.top50topics = response.data.trending_topics;
       // Create the data table.
       var rows = [['Name', 'Volume', { role: 'style' }]];
