@@ -1,6 +1,6 @@
 /* Dependencies */
-var jwt = require('jsonwebtoken'),
-    config = require('../config/config'),
+// var jwt = require('jsonwebtoken'),
+var config = require('../config/config'),
     NodeGeocoder = require('node-geocoder');
 
 var google_api_key = 'AIzaSyA5WXvo4GKCAbAfdRJDA9N3x08GBeAjR4g'

@@ -17,9 +17,9 @@ angular.module('tweet_by_topic', []).factory('Data', function($http, $window) {
   var methods = {
     getTweetsByTopic: function(topic) {
       return $http.post('https://pumpkin-tart-18443.herokuapp.com/api/tweets_by_topic', topic, {
-        headers: {
-          'Authorization': 'Bearer ' + token
-        }
+        // headers: {
+        //   'Authorization': 'Bearer ' + token
+        // }
       });
     },
   };
